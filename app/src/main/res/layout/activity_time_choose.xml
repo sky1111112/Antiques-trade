@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeChoose"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        app:navigationIcon="@mipmap/back"
+        app:titleTextColor="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="xx酒店欢迎您预定房间"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/logo"
+        app:civ_border_color="@color/teal_700"
+        app:civ_border_width="2dp" />
+
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/et_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="预定开始时间："
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/arrive_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="日期xx-xx-xx"
+                android:paddingLeft="10dp"
+                android:textColor="#333"
+                android:textSize="15sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/et_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="预定结束时间："
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/leave_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+
+                android:paddingLeft="10dp"
+                android:hint="日期xx-xx-xx"
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/et_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="请您留下备注信息"
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/nickname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <Button
+            android:id="@+id/reservation"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/btn_bg"
+            android:onClick="register"
+            android:text="确定"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            tools:ignore="OnClick" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
